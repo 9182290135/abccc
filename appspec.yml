@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
 - source: target/ROOT.war
-  destination: /home/ec2-user/javaapp
+  destination: /home/ubunut/SampleApp_Linux.zip
 - source: /scripts/requirements.txt
-  destination: /home/ec2-user/scripts
+  destination: /home/SampleApp_Linux.zip
 hooks:
   AfterInstall:
   - location: scripts/install_python3
@@ -30,5 +30,4 @@ hooks:
   - location: scripts/stop_server
     timeout: 600
     runas: root
-
 
