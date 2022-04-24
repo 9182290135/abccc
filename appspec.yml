@@ -6,8 +6,6 @@ files:
 - source: /scripts/requirements.txt
   destination: /home/ec2-user/scripts
 hooks:
-  beforeInstall:
-   - echo no need of changes
   afterInstall:
   - location: scripts/install_python3
     timeout: 2000
