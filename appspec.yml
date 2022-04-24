@@ -6,7 +6,7 @@ files:
 - source: /scripts/requirements.txt
   destination: /home/ec2-user/scripts
 hooks:
-  AfterInstall:
+  beforeInstall:
   - location: scripts/install_python3
     timeout: 2000
     runas: root
