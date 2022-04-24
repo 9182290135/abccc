@@ -7,9 +7,9 @@ files:
   destination: /home/ec2-user/scripts
 hooks:
   beforeinstall:
-  - location: scripts/beforeinstall.sh
-    timeout: 2000
-    runas: root
+    - location: scripts/beforeinstall.sh
+      timeout: 2000
+      runas: root
   afterInstall:
   - location: scripts/install_python3
     timeout: 2000
