@@ -7,7 +7,7 @@ files:
   destination: /home/ec2-user/scripts
 hooks:
   beforeinstall:
-   - location: scripts/beforeinstall.sh
+  - location: scripts/beforeinstall.sh
     timeout: 2000
     runas: root
   afterInstall:
